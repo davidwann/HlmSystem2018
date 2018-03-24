@@ -12,7 +12,7 @@ echo " "
 # delete everything from classes directory
 # -------------------------------------------------------
 
-rm -r $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/classes/*
+rm -r $HOME/Projects/HlmProjects/HlmProject_0001/hlm/classes/*
 
 # exit 0
 
@@ -46,10 +46,11 @@ rm -r $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/classes/*
 
 find -name *.java > sources.txt
 
-javac -cp $CATALINA_HOME/lib/servlet-api.jar:$CATALINA_HOME/lib/taglibs-standard-impl-1.2.5.jar:$CATALINA_HOME/lib/taglibs-standard-spec-1.2.5.jar -d classes @sources.txt
+# javac -cp $CATALINA_HOME/lib/servlet-api.jar:$CATALINA_HOME/lib/taglibs-standard-impl-1.2.5.jar:$CATALINA_HOME/lib/taglibs-standard-spec-1.2.5.jar -d classes @sources.txt
+
+javac -cp $CATALINA_HOME/lib/servlet-api.jar -d classes @sources.txt
 
 # $CATALINA_HOME/lib/taglibs-standard-impl-1.2.5.jar:$CATALINA_HOME/lib/taglibs-standard-spec-1.2.5.jar
-
 
 
 
@@ -68,32 +69,32 @@ rm -rf $CATALINA_HOME/webapps/hlm
 mkdir -p $CATALINA_HOME/webapps/hlm/WEB-INF
 
 # cp /home/david/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/*.html /home/david/Software/Servers/Tomcat8/webapps/hlm
-cp $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/*.html $CATALINA_HOME/webapps/hlm
+cp $HOME/Projects/HlmProjects/HlmProject_0001/hlm/*.html $CATALINA_HOME/webapps/hlm
 
 # cp /home/david/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/*.jsp /home/david/Software/Servers/Tomcat8/webapps/hlm
-cp $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/*.jsp $CATALINA_HOME/webapps/hlm
+cp $HOME/Projects/HlmProjects/HlmProject_0001/hlm/*.jsp $CATALINA_HOME/webapps/hlm
 
-cp -r $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/register $CATALINA_HOME/webapps/hlm
+cp -r $HOME/Projects/HlmProjects/HlmProject_0001/hlm/register $CATALINA_HOME/webapps/hlm
 
 # cp -r /home/david/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/classes /home/david/Software/Servers/Tomcat8/webapps/hlm/WEB-INF/classes
 # cp -r $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/classes $CATALINA_HOME/webapps/hlm/WEB-INF/classes
-cp -r $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/classes $CATALINA_HOME/webapps/hlm/WEB-INF
+cp -r $HOME/Projects/HlmProjects/HlmProject_0001/hlm/classes $CATALINA_HOME/webapps/hlm/WEB-INF
 
 # cp /home/david/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/etc/web.xml /home/david/Software/Servers/Tomcat8/webapps/hlm/WEB-INF
-cp $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/etc/web.xml $CATALINA_HOME/webapps/hlm/WEB-INF
+cp $HOME/Projects/HlmProjects/HlmProject_0001/hlm/etc/web.xml $CATALINA_HOME/webapps/hlm/WEB-INF
 
 
 # -------------------------------------------------------
 # create a war file
 # -------------------------------------------------------
 
-rm $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/hlm.war
+rm $HOME/Projects/HlmProjects/HlmProject_0001/hlm/hlm.war
 
 cd $CATALINA_HOME/webapps/hlm
 
-jar -cf $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm/hlm.war *
+jar -cf $HOME/Projects/HlmProjects/HlmProject_0001/hlm/hlm.war *
 
-cd $HOME/Dropbox/Projects/HlmProjects/HlmProject_0001/hlm
+cd $HOME/Projects/HlmProjects/HlmProject_0001/hlm
 
 
 # -------------------------------------------------------
