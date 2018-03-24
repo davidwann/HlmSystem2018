@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app version="3.1"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+        <!--  =================================================  -->
+        <!--                                                     -->
+        <!--          Servlets                                   -->
+        <!--                                                     -->
+        <!--  =================================================  -->
+
+	<servlet>
+		<servlet-name>Demo Servlet 1</servlet-name>
+		<servlet-class>com.hornylikeme.demoservlets.myServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Account Type Evaluation Servlet</servlet-name>
+		<servlet-class>com.hornylikeme.servlets.register.AcctTypeEval</servlet-class>
+	</servlet>
+
+        <!--  =================================================  -->
+        <!--                                                     -->
+        <!--          Servlet Mappings                           -->
+        <!--                                                     -->
+        <!--  =================================================  -->
+
+	<servlet-mapping>
+		<servlet-name>Account Type Evaluation Servlet</servlet-name>
+		<url-pattern>/register/ateval</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Demo Servlet 1</servlet-name>
+		<url-pattern>/poo/demserv1</url-pattern>
+	</servlet-mapping>
+
+        <!--  =================================================  -->
+        <!--                                                     -->
+        <!--                                                     -->
+        <!--  =================================================  -->
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
+

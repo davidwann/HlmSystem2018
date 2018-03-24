@@ -1,0 +1,385 @@
+
+
+"javax.mail.Session properties"
+
+
+
+
+
+
+
+// java program
+
+// send email to paul austin
+
+import javax.mail.Session;
+import java.util.Properties;
+import javax.mail.internet.MimeMessage;
+
+import javax.mail.internet.InternetAddress;
+import javax.mail.Message;
+
+import javax.mail.internet.AddressException;
+import javax.mail.MessagingException;
+
+import javax.mail.Transport;
+
+public class Email {
+
+	public static void main(String[] args) {
+
+		// doWork001(args);
+		doWork002(args);
+
+		System.out.println("Program is finished.");
+	}
+
+	/* =============================================================== */
+
+	private void doWork002(String[] args) {
+
+		// --------------------------------------
+		// Create Authenticator Object
+		// --------------------------------------
+
+		MyAuthenticator myAuthenticator = new MyAuthenticator();
+
+		myAuthenticator.setUsername("paul@hornylikeme.com");
+		myAuthenticator.setPassword("cobol4me");
+
+		// --------------------------------------
+		// Create Properties object to define 
+		//  * email recipient
+		// --------------------------------------
+
+		Properties properties = new Properties();
+
+		/*
+
+		props - Properties object. Used only if a new Session object is created.
+
+		It is expected that the client supplies values for the properties listed in Appendix A 
+		of the JavaMail spec (particularly mail.store.protocol, 
+ 		mail.transport.protocol, mail.host, mail.user, and mail.from) as the defaults are unlikely to work in all cases.
+
+		JavaMail spec Appendix A 
+
+		properties.setProperty("mail.smtp.host", "gator3099.hostgator.com");
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.port", "465");
+		properties.setProperty("mail.smtp.starttls.enable", "true");
+
+		properties.setProperty("mail.host", "gator3099.hostgator.com");
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.port", "465");
+		properties.setProperty("mail.smtp.starttls.enable", "true");
+ 		
+		*/
+
+		properties.setProperty("mail.transport.protocol", "smtp");
+		properties.setProperty("mail.smtp.starttls.enable","true");
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.host", "gator3099.hostgator.com");
+		properties.setProperty("mail.smtp.port", "465");
+
+		// --------------------------------------
+		// Create the Session
+		// --------------------------------------
+
+		// Session session = Session.getDefaultInstance(properties, myAuthenticator);
+		Session session;
+
+		System.out.println("doWork002 is finished.");
+
+		return;
+
+	/* =============================================================== */
+
+	private void doWork001(String[] args) {
+
+		// --------------------------------------
+		// Create Authenticator Object
+		// --------------------------------------
+
+		MyAuthenticator myAuthenticator = new MyAuthenticator();
+
+		myAuthenticator.setUsername("paul@hornylikeme.com");
+		myAuthenticator.setPassword("cobol4me");
+
+		// --------------------------------------
+		// Create Properties object to define 
+		//  * email recipient
+		// --------------------------------------
+
+		Properties properties = new Properties();
+
+		/*
+
+		props - Properties object. Used only if a new Session object is created.
+
+		It is expected that the client supplies values for the properties listed in Appendix A 
+		of the JavaMail spec (particularly mail.store.protocol, 
+ 		mail.transport.protocol, mail.host, mail.user, and mail.from) as the defaults are unlikely to work in all cases.
+
+		JavaMail spec Appendix A 
+
+		properties.setProperty("mail.smtp.host", "gator3099.hostgator.com");
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.port", "465");
+		properties.setProperty("mail.smtp.starttls.enable", "true");
+
+		properties.setProperty("mail.host", "gator3099.hostgator.com");
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.port", "465");
+		properties.setProperty("mail.smtp.starttls.enable", "true");
+ 		
+		*/
+
+		properties.setProperty("mail.transport.protocol", "smtp");
+		properties.setProperty("mail.smtp.starttls.enable","true");
+		properties.setProperty("mail.smtp.auth", "true");
+		properties.setProperty("mail.smtp.host", "gator3099.hostgator.com");
+		properties.setProperty("mail.smtp.port", "465");
+
+
+		// --------------------------------------
+		// Create the Session
+		// --------------------------------------
+
+		Session session = Session.getDefaultInstance(properties, myAuthenticator);
+
+		// --------------------------------------
+		// x
+		// --------------------------------------
+
+		String from = "paul@hornylikeme.com";
+		String to = "david.wann@gmail.com";
+
+		MimeMessage message = new MimeMessage(session);
+
+		try {
+			message.setFrom(new InternetAddress(from));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+			message.setSubject("Test Message");
+			message.setText("Did you get this?");
+
+			Transport.send(message);
+
+		} catch (AddressException e) {
+			// do something?
+			System.out.println(e.toString());
+
+		} catch (MessagingException e) {
+			// do something?
+			System.out.println(e.toString());
+		}
+
+		// System.out.println("Email class has finished doing its thing!");
+		System.out.println("Your email has been sent!");
+
+		System.out.println("doWork001 is finished.");
+
+		return;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			System.out.println(e.toString());
+
+
+
+
+sudo service postfix stop
+
+sudo apt-get --purge remove postfix
+
+sudo apt-get autoremove
+
+
+
+
+
+
+
+///////////////////////////////////////////////
+
+ports
+
+25
+587
+
+
+465
+
+
+
+///////////////////////////////////////////////
+
+
+
+
+sudo apt-get update
+
+
+sudo apt-get install mailutils
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postfix is a mail transfer agent (MTA), an application used to send and receive email. In this tutorial, we will install and configure Postfix so that it can be used to send emails by local applications only — that is, those installed on the same server that Postfix is installed on.
+
+Why would you want to do that?
+
+If you're already using a third-party email provider for sending and receiving emails, you do not need to run your own mail server. However, if you manage a cloud server on which you have installed applications that need to send email notifications, running a local, send-only SMTP server is a good alternative to using a 3rd party email service provider or running a full-blown SMTP server.
+
+In this tutorial, you'll learn how to install and configure Postfix as a send-only SMTP server.
+
+
+
+Postfix on Linux ( Debian-based Linux )
+
+
+
+
+
+
+dpkg -l | grep postfix
+
+
+sudo apt-get install postfix
+
+sudo apt-get install postfix
+
+
+Now enter the fully qualified domain name that you want to use for send and receive mails.
+
+fully qualified domain name
+
+FQDM
+
+
+www.hornylikeme.com
+
+
+
+
+
+
+
+
+
+
+java web services by example
+
+
+
+
+client
+
+server
+
+
+
+
+
+
+
+

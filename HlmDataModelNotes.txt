@@ -1,0 +1,204 @@
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+User Account:
+
+- - - - - - - - - - - - - - - - - - - -
+
+ - type:  SM - Single Males
+          SF - Single Female
+          CP - Couple - MF
+          CM - Couple - MM
+          CF - Couple - FF
+
+
+ - id
+
+ - System-generated Username
+ - Username
+
+
+ - email
+ - password
+ - Zip Code                     ( find zip code data at:  https://www.census.gov/geo/maps-data/data/gazetteer2017.html )
+ - lat_coordinate
+ - long_coordinate
+
+ - greeting
+
+ - interests
+
+ - Wants to meet:     SM - Single Males
+   ( Interested in )  SF - Single Female
+                      CP - Couple - MF
+                      CM - Couple - MM
+                      CF - Couple - FF
+
+
+ - created
+ - modified
+
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+Primary ( and Secondary ) Account Member:
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+ - id
+
+ - account_id ( foreign key )
+
+ - gender:  M or F
+ - Year of Birth:
+
+ - Date of Birth ???
+
+ - Orientation:  Straight, Gay, Bisexual
+ - highest level of education
+ - race
+
+ - body type:  Slender
+               Athletic
+               Muscular
+               Average
+               A Few Extra Pounds
+               Big & Tall/BBW
+
+ - height
+ - occupation
+
+ - marital status:  single
+                    married
+                    separated
+                    divorced
+                    widowed
+
+ - smoke:  yes/no
+ - drink:  yes/no
+ - drugs:  yes/no
+
+ - created
+ - modified
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+Login
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+Message
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+Picture
+
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+Search
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - -
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
