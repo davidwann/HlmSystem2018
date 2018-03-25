@@ -1,0 +1,147 @@
+
+
+
+
+create new account
+
+
+    Screen 1:
+
+    provide starting information
+
+        choose account type
+        select 1 or more interests
+        provide zip code
+        provide email address
+        provide password
+
+
+    Screen 2:
+
+    provide information for member 1
+
+        provide year of birth
+        provide sexual orientation
+
+
+
+
+    screen 2-B:
+
+    provide information for member 2
+
+
+
+
+
+
+    confirm information is correct
+
+
+
+    confirm email address
+
+
+
+
+
+
+
+
+search for dates
+
+
+
+
+
+communicate with other members
+
+
+
+
+
+
+
+
+
+
+
+
+Packages
+---------
+
+com.hlm.servlets.register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
