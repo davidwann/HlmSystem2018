@@ -1,8 +1,10 @@
 
 
-
+/////////////////////////////////////////////////////////////////////////
 
 create new account
+
+/////////////////////////////////////////////////////////////////////////
 
 
     Screen 1:
@@ -15,29 +17,55 @@ create new account
         provide email address
         provide password
 
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     Screen 2:
 
     provide information for member 1
 
+        provide gender ( only for M/F couples - gender of member will
+                         be known for the other 4 account types )
+
         provide year of birth
         provide sexual orientation
+        provide race
+        provide height
+        provide body type
+        provide occupation
 
 
-
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     screen 2-B:
 
-    provide information for member 2
+    provide information for member 2  ( this screen is only necessary
+                                        for couple accounts )
+
+        provide gender ( only for M/F couples - gender of member will
+                         be known for the other 2 couple account types )
+
+        provide year of birth
+        provide sexual orientation
+        provide race
+        provide height
+        provide body type
+        provide occupation
 
 
 
 
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    screen 3:
 
     confirm information is correct
 
 
+
+
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    screen 4:
 
     confirm email address
 
@@ -46,21 +74,55 @@ create new account
 
 
 
+/////////////////////////////////////////////////////////////////////////
 
+Upload photos
+
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
 
 search for dates
 
+/////////////////////////////////////////////////////////////////////////
 
 
 
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
 
 communicate with other members
 
+/////////////////////////////////////////////////////////////////////////
 
 
 
 
 
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
 
 
 
