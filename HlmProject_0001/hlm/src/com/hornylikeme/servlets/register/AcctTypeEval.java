@@ -20,7 +20,7 @@ import java.io.IOException;
 
 public class AcctTypeEval extends HttpServlet {
 
-	public void doPost(HttpServletRequest request, 
+	public void doPost(HttpServletRequest request,
                            HttpServletResponse response) {
 
 		// ------------------------------------------------
@@ -41,6 +41,9 @@ public class AcctTypeEval extends HttpServlet {
 		// move posted data into request attributes
 
 		request.setAttribute("accountType", accountType);
+
+    request.setAttribute("gender", accountType.charAt(1));
+
 		request.setAttribute("SF_Interest", sf_interest);
 		request.setAttribute("SM_Interest", sm_interest);
 		request.setAttribute("CMF_Interest", cmf_interest);
@@ -54,6 +57,9 @@ public class AcctTypeEval extends HttpServlet {
 		// ------------------------------------------------
 
 		try {
+
+			/*
+
 			if (accountType.charAt(0) == 'S') {
 
 				// ------------------------------------------
@@ -61,15 +67,18 @@ public class AcctTypeEval extends HttpServlet {
 				// forward to jsp "register/single_reg.jsp"
 				// ------------------------------------------
 
-				String url = "/register/single_reg1.jsp";
-				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-				dispatcher.forward(request, response);
-
 			} else {
 				// account is a couple
-				PrintWriter out = response.getWriter();
-				out.println("Registration for couples accounts is not ready yet");
+				// PrintWriter out = response.getWriter();
+				// out.println("Registration for couples accounts is not ready yet");
 			}
+
+			*/
+
+			String url = "/register/single_reg1.jsp";
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+			dispatcher.forward(request, response);
+
 		} catch (ServletException e) {
 			System.out.println(e.toString());
 		} catch (IOException e) {
@@ -79,4 +88,3 @@ public class AcctTypeEval extends HttpServlet {
 	}
 
 }
-

@@ -6,13 +6,13 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" 
+  <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" 
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
   <title>Create New Account - Horny Like Me</title>
@@ -23,7 +23,13 @@
 
 <%
 
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
   String accountType = (String) request.getAttribute("accountType");
+
+  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  String gender = (String) request.getAttribute("gender");
 
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -92,7 +98,7 @@
 
 %>
 
-<!-- 
+<!--
 
 <div class="container">
 <div class="container-fluid">
@@ -131,6 +137,29 @@
   </div>
 
 -->
+
+  <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+  <!--  Gender  -->
+
+
+
+  <input type="hidden" value="<%= accountType %>" name="accountType" />
+  <input type="hidden" value="<%= sm_interest %>" name="SM_Interest" />
+
+
+  <c:choose>
+    <c:when test='${accountType == "CP"}'>
+      <c:out value='<option value="${i}" selected>${i}</option>' escapeXml='false' />
+    </c:when>
+    <c:otherwise>
+      <c:out value='<option value="${i}">${i}</option>' escapeXml='false' />
+    </c:otherwise>
+  </c:choose>
+
+
+
+
 
   <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
@@ -352,19 +381,18 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous" />
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous" />
 
 </body>
 
 </html>
-

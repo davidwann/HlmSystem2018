@@ -1,3 +1,2 @@
 ./src/com/hornylikeme/demoservlets/myServlet.java
-./src/com/hornylikeme/servlets/Register1.java
 ./src/com/hornylikeme/servlets/register/AcctTypeEval.java
