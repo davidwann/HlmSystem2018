@@ -42,7 +42,7 @@ public class AcctTypeEval extends HttpServlet {
 
 		request.setAttribute("accountType", accountType);
 
-    request.setAttribute("gender", accountType.charAt(1));
+        request.setAttribute("gender", accountType.charAt(1));
 
 		request.setAttribute("SF_Interest", sf_interest);
 		request.setAttribute("SM_Interest", sm_interest);

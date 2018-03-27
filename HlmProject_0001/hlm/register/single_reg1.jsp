@@ -112,11 +112,13 @@
 <form action="reg_values.jsp" method="post">
 
 <input type="hidden" value="<%= accountType %>" name="accountType" />
+
 <input type="hidden" value="<%= sm_interest %>" name="SM_Interest" />
 <input type="hidden" value="<%= sf_interest %>" name="SF_Interest" />
 <input type="hidden" value="<%= cmf_interest %>" name="CMF_Interest" />
 <input type="hidden" value="<%= cmm_interest %>" name="CMM_Interest" />
 <input type="hidden" value="<%= cff_interest %>" name="CFF_Interest" />
+
 <input type="hidden" value="<%= zipCode %>" name="zipCode" />
 
 <input type="hidden" value="<%= email %>" name="email" />
@@ -142,24 +144,18 @@
 
   <!--  Gender  -->
 
-
-
-  <input type="hidden" value="<%= accountType %>" name="accountType" />
-  <input type="hidden" value="<%= sm_interest %>" name="SM_Interest" />
-
-
   <c:choose>
-    <c:when test='${accountType == "CP"}'>
-      <c:out value='<option value="${i}" selected>${i}</option>' escapeXml='false' />
+    <c:when test='${gender == "P"}'>
+      <label for="genderInput">Select Your Gender</label>
+      <select class="form-control" id="genderInput" name="gender">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
     </c:when>
     <c:otherwise>
-      <c:out value='<option value="${i}">${i}</option>' escapeXml='false' />
+      <c:out value='<input type="hidden" value="${gender}" name="gender" />' escapeXml='false' />
     </c:otherwise>
   </c:choose>
-
-
-
-
 
   <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
