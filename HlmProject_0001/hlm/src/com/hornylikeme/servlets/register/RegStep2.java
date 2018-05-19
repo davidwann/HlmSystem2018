@@ -14,21 +14,22 @@ import java.io.IOException;
 
 /* ============================================= */
 /*                                               */
-/*  Step 1 of the new user registration process  */
+/*  Step 2 of the new user registration process  */
 /*                                               */
 /* ============================================= */
 
-public class AcctTypeEval extends HttpServlet {
+public class RegStep2 extends HttpServlet {
 
 	public void doPost(HttpServletRequest request,
                            HttpServletResponse response) {
 
 		// ------------------------------------------------
 
-		String accountType = request.getParameter("accountType");
+    // --------------------------------------
+    //   Input data from screen 1
+    // --------------------------------------
 
-		// String gender = ?     // see gender below
-
+    String accountType = request.getParameter("accountType");
 		String sf_interest = request.getParameter("SF_Interest");
 		String sm_interest = request.getParameter("SM_Interest");
 		String cmf_interest = request.getParameter("CMF_Interest");
@@ -38,6 +39,22 @@ public class AcctTypeEval extends HttpServlet {
 
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+
+    // --------------------------------------
+    //   Input data from screen 2
+    // --------------------------------------
+
+    String gender = request.getParameter("gender");
+
+		// yearOfBirth
+		// orientation
+		// race
+		// height
+		// bodyType
+		// occupation
+
+
+
 
 		// ------------------------------------------------
 

@@ -146,11 +146,13 @@
 
   <c:choose>
     <c:when test='${gender == "P"}'>
-      <label for="genderInput">Select Your Gender</label>
+      <div class="form-group">
+      <label for="genderInput">Your Gender</label>
       <select class="form-control" id="genderInput" name="gender">
         <option value="M">Male</option>
         <option value="F">Female</option>
       </select>
+      </div>
     </c:when>
     <c:otherwise>
       <c:out value='<input type="hidden" value="${gender}" name="gender" />' escapeXml='false' />
@@ -293,7 +295,20 @@
 
   <!--  highest level of education  -->
 
-
+  <div class="form-group">
+    <label for="educationInput">Your Highest Level of Education</label>
+    <select class="form-control" id="educationInput" name="education">
+      <option value="un">Unspecified</option>
+      <option value="">High School Dropout</option>
+      <option value="">Graduated High School</option>
+      <option value="">Some College</option>
+      <option value="">Associate Degree</option>
+      <option value="">Bachelor's Degree</option>
+      <option value="">Professional Degree</option>
+      <option value="">Master's Degree</option>
+      <option value="">Doctoral Degree</option>
+    </select>
+  </div>
 
 
 
