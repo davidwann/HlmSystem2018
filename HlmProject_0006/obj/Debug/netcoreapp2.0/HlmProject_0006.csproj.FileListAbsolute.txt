@@ -1,0 +1,11 @@
+/home/david/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.deps.json
+/home/david/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.runtimeconfig.json
+/home/david/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.runtimeconfig.dev.json
+/home/david/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.dll
+/home/david/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.pdb
+/home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.csprojAssemblyReference.cache
+/home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.csproj.CoreCompileInputs.cache
+/home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.AssemblyInfoInputs.cache
+/home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.AssemblyInfo.cs
+/home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.dll
+/home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.pdb
