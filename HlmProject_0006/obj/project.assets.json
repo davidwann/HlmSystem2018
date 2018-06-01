@@ -11477,7 +11477,7 @@
       ]
     },
     "System.Security.Cryptography.Xml/4.4.2": {
-      "sha512": "q9Dren/YP5jhRCkDvLfuaPpMTQzP97ANvzq/OoGgwK8YdLRSTABS9oW5/23OKoM2DRCuBrh4qaecD2YNhPtuzQ==",
+      "sha512": "1m+fKVrApgKYMRuE0MF0vGjqy4XqAp1rCtyAzMXhJajMDDytMh/rHk9hp4M7KKk3QQZoWJUvyUY7xcw74w+JiQ==",
       "type": "package",
       "path": "system.security.cryptography.xml/4.4.2",
       "files": [
@@ -12662,23 +12662,23 @@
     ]
   },
   "packageFolders": {
-    "/home/david/.nuget/packages/": {},
+    "/home/samira/.nuget/packages/": {},
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/david/Projects/HlmProjects/HlmProject_0006/HlmProject_0006.csproj",
+      "projectUniqueName": "/home/samira/Projects/HlmProjects/HlmProject_0006/HlmProject_0006.csproj",
       "projectName": "HlmProject_0006",
-      "projectPath": "/home/david/Projects/HlmProjects/HlmProject_0006/HlmProject_0006.csproj",
-      "packagesPath": "/home/david/.nuget/packages/",
-      "outputPath": "/home/david/Projects/HlmProjects/HlmProject_0006/obj/",
+      "projectPath": "/home/samira/Projects/HlmProjects/HlmProject_0006/HlmProject_0006.csproj",
+      "packagesPath": "/home/samira/.nuget/packages/",
+      "outputPath": "/home/samira/Projects/HlmProjects/HlmProject_0006/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/david/.nuget/NuGet/NuGet.Config"
+        "/home/samira/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

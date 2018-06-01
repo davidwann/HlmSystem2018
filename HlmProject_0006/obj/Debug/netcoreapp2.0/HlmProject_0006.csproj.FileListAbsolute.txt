@@ -9,3 +9,14 @@
 /home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.AssemblyInfo.cs
 /home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.dll
 /home/david/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.pdb
+/home/samira/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.deps.json
+/home/samira/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.runtimeconfig.json
+/home/samira/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.runtimeconfig.dev.json
+/home/samira/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.dll
+/home/samira/Projects/HlmProjects/HlmProject_0006/bin/Debug/netcoreapp2.0/HlmProject_0006.pdb
+/home/samira/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.csprojResolveAssemblyReference.cache
+/home/samira/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.csproj.CoreCompileInputs.cache
+/home/samira/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.AssemblyInfoInputs.cache
+/home/samira/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.AssemblyInfo.cs
+/home/samira/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.dll
+/home/samira/Projects/HlmProjects/HlmProject_0006/obj/Debug/netcoreapp2.0/HlmProject_0006.pdb
