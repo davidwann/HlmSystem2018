@@ -1,0 +1,13 @@
+/home/samira/Projects/HlmProjects/test02/bin/Debug/netcoreapp2.0/app.db
+/home/samira/Projects/HlmProjects/test02/bin/Debug/netcoreapp2.0/test02.deps.json
+/home/samira/Projects/HlmProjects/test02/bin/Debug/netcoreapp2.0/test02.runtimeconfig.json
+/home/samira/Projects/HlmProjects/test02/bin/Debug/netcoreapp2.0/test02.runtimeconfig.dev.json
+/home/samira/Projects/HlmProjects/test02/bin/Debug/netcoreapp2.0/test02.dll
+/home/samira/Projects/HlmProjects/test02/bin/Debug/netcoreapp2.0/test02.pdb
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/test02.csprojResolveAssemblyReference.cache
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/test02.csproj.CoreCompileInputs.cache
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/test02.AssemblyInfoInputs.cache
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/test02.AssemblyInfo.cs
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/test02.dll
+/home/samira/Projects/HlmProjects/test02/obj/Debug/netcoreapp2.0/test02.pdb
