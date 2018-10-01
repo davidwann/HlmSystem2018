@@ -13,8 +13,7 @@ Technologies used in this version:
 
 Struts 1.3.10
 Enterprise Java Beans 2.1
-
-
+Web Services
 
 
 
