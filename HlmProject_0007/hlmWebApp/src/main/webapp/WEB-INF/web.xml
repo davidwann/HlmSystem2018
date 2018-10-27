@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Servlet1</servlet-name>
+  	<display-name>Servlet1</display-name>
+  	<description></description>
+  	<servlet-class>com.hlm.servlets.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Servlet1</servlet-name>
+  	<url-pattern>/findmatches</url-pattern>
+  </servlet-mapping>
 </web-app>
